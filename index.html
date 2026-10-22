@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of S Annapoorani, Computer Science Student">
+<title>S Annapoorani | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">SA</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+  <nav id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+    <button id="themeBtn" class="theme-btn" aria-label="Toggle dark mode">&#9790;</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hello">Hello, I'm</p>
+      <h1>S Annapoorani</h1>
+      <h2>I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+      <p class="lead">Motivated computer science student with a foundation in C, Python, Java and JavaScript, seeking an entry-level opportunity to apply my skills and keep learning.</p>
+      <div class="btns">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="S_Annapoorani_Resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="avatar" aria-hidden="true">SA</div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h3 class="title">About Me</h3>
+    <p>I am a computer science student from Coimbatore, Tamil Nadu. I enjoy building practical programs, understanding data structures, and exploring cloud and process mining tools. I have completed certifications on Coursera, Celonis Academy, ICT Academy and FutureSkills Prime, and I am always looking for new things to learn.</p>
+    <div class="stats">
+      <div><strong>13</strong><span>Certifications</span></div>
+      <div><strong>4</strong><span>Languages Coded</span></div>
+      <div><strong>2</strong><span>Projects</span></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h3 class="title">Technical Skills</h3>
+    <div class="skills">
+      <div class="skill"><span>C</span><div class="bar"><i data-w="75"></i></div></div>
+      <div class="skill"><span>Python</span><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill"><span>Java</span><div class="bar"><i data-w="75"></i></div></div>
+      <div class="skill"><span>JavaScript</span><div class="bar"><i data-w="70"></i></div></div>
+    </div>
+    <p class="muted">Languages known: Tamil, English</p>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <h3 class="title">Projects</h3>
+    <div class="cards">
+      <article class="card">
+        <h4>Scholarship Eligibility Verification and Shortlisting</h4>
+        <p>A system that checks applicants against scholarship criteria and shortlists the eligible candidates.</p>
+        <a href="https://github.com/Annapoorani1208" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </article>
+      <article class="card">
+        <h4>String Utility Box</h4>
+        <p>A collection of handy string operations bundled into one easy-to-use utility toolkit.</p>
+        <a href="https://github.com/Annapoorani1208" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="education" class="section reveal">
+    <h3 class="title">Academic Performance</h3>
+    <table>
+      <thead><tr><th>Semester</th><th>Marks</th></tr></thead>
+      <tbody>
+        <tr><td>1st Semester</td><td>62</td></tr>
+        <tr><td>2nd Semester</td><td>71</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="certifications" class="section reveal">
+    <h3 class="title">Certifications / Courses</h3>
+    <ul class="certs" id="certList"></ul>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h3 class="title">Contact</h3>
+    <div class="contact-grid">
+      <div class="info">
+        <p><b>Email:</b> <a href="mailto:annapooranis298@gmail.com">annapooranis298@gmail.com</a></p>
+        <p><b>Phone:</b> <a href="tel:+917010638913">+91 70106 38913</a></p>
+        <p><b>Location:</b> Coimbatore, Tamil Nadu</p>
+        <p><b>GitHub:</b> <a href="https://github.com/Annapoorani1208" target="_blank" rel="noopener">github.com/Annapoorani1208</a></p>
+      </div>
+      <form id="contactForm" novalidate>
+        <input type="text" id="cName" placeholder="Your name" required>
+        <input type="email" id="cEmail" placeholder="Your email" required>
+        <textarea id="cMsg" rows="4" placeholder="Your message" required></textarea>
+        <p class="error" id="formError"></p>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; <span id="year"></span> S Annapoorani. All rights reserved.</footer>
+<button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
